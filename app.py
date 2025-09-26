@@ -57,4 +57,6 @@ if st.sidebar.button("Fetch & Visualize"):
         with open("chart.png", "rb") as f:
             st.download_button("📥 Download Chart", f, file_name=f"{ticker}_chart.png")
     else:
+
         st.error("No data found. Please check the inputs.")
+
